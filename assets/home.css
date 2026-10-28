@@ -32,10 +32,13 @@
 .gateway-card:nth-child(1){background:linear-gradient(135deg,#f8d0df,#e9a6c7)}
 .gateway-card:nth-child(2){background:linear-gradient(135deg,#dbcaed,#9e71c0)}
 .gateway-card:nth-child(3){background:linear-gradient(135deg,#332245,#0c4e3b);color:#fff}
+.gateway-card:nth-child(4){background:linear-gradient(135deg,#f6c5d8,#dc8fb2)}
+.gateway-card:nth-child(5){background:linear-gradient(135deg,#17624f,#0c4035);color:#fff}
+.gateway-card:nth-child(6){background:linear-gradient(135deg,#e7f1fc,#9cc9e8)}
 .gateway-card small{font:11px 'DM Mono';letter-spacing:.12em;text-transform:uppercase}
 .gateway-card b{font:clamp(29px,3.5vw,49px)/.95 'Playfair Display';letter-spacing:-.05em}
 .gateway-card p{max-width:240px;margin:0;font-size:13px;line-height:1.55}
-.gateway-card:nth-child(3) p{color:#d9eee6}
+.gateway-card:nth-child(3) p,.gateway-card:nth-child(5) p{color:#d9eee6}
 .home-nav{backdrop-filter:blur(14px)}
 
 @media(max-width:720px){.gateway{padding:0 6vw}
