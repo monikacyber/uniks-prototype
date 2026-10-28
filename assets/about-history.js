@@ -18,7 +18,7 @@
 
   document.querySelector('.intro')?.after(history);
   document.head.insertAdjacentHTML('beforeend', `<style>
-    body[data-page="about"] .hero{background-color:#21172d;background-image:linear-gradient(90deg,rgba(28,16,42,.94) 0%,rgba(28,16,42,.74) 42%,rgba(28,16,42,.16) 100%),url('assets/uniks-team-portrait.jpg');background-size:cover;background-position:center 36%}
+    body[data-page="about"] .hero{background-color:#21172d;background-image:linear-gradient(90deg,rgba(28,16,42,.98) 0%,rgba(28,16,42,.84) 42%,rgba(28,16,42,.16) 100%),url('/assets/uniks-team-portrait.jpg');background-size:auto,auto 100%;background-position:center,right center;background-repeat:no-repeat}
     body[data-page="about"] .hero .orb{opacity:.16}
     .about-history{display:grid;grid-template-columns:.8fr 1.6fr;gap:55px;background:#21172d;color:#fbf8fc}
     .about-history h2{margin:0 0 16px}.about-history h2 em{color:#d8b7f0}
