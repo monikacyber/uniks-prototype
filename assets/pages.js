@@ -34,3 +34,5 @@ if(document.body.dataset.page==='about'){document.querySelector('.intro .copy')?
 if(document.body.dataset.page==='private-label'){const projects=document.createElement('section');projects.className='pl-projects reveal';projects.innerHTML='<div class="section-title">Реалізовані проєкти</div><div><h2>Бренди, що<br><em>вийшли на ринок.</em></h2><p>Тут збиратимемо історії партнерських брендів, які пройшли шлях від ідеї до готового продукту разом з UNIKS.</p><div class="project-grid"><article><span>01</span><strong>Кейс партнера</strong><small>Незабаром</small></article><article><span>02</span><strong>Кейс партнера</strong><small>Незабаром</small></article><article><span>03</span><strong>Кейс партнера</strong><small>Незабаром</small></article><article><span>04</span><strong>Кейс партнера</strong><small>Незабаром</small></article></div></div>';document.querySelector('.band')?.after(projects);o.observe(projects)}
 
 if(document.body.dataset.page==='private-label')document.querySelector('.pl-numbers b')?.replaceChildren('25+');
+
+if(document.body.dataset.page==='about')document.querySelector('.band')?.remove();
