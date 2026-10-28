@@ -35,6 +35,7 @@
 .gateway-card:nth-child(4){background:linear-gradient(135deg,#3b284d,#1d132a);color:#fff}
 .gateway-card:nth-child(5){background:linear-gradient(135deg,#426aa0,#1d365f);color:#fff}
 .gateway-card:nth-child(6){background:linear-gradient(135deg,#e9f2fb,#a9cdea)}
+.gateway-card:nth-child(7){background:linear-gradient(135deg,#eee4f5,#c9a7df)}
 .gateway-card small{font:11px 'DM Mono';letter-spacing:.12em;text-transform:uppercase}
 .gateway-card b{font:650 clamp(25px,2.8vw,39px)/1.02 Manrope,Arial,sans-serif;letter-spacing:-.065em}
 .gateway-card p{max-width:240px;margin:0;font-size:13px;line-height:1.55}
