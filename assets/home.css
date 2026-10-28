@@ -40,6 +40,8 @@
 .gateway-card p{max-width:240px;margin:0;font-size:13px;line-height:1.55}
 .gateway-card:nth-child(3) p{color:#e5d7ef}.gateway-card:nth-child(5) p{color:#dce8f8}
 .home-nav{backdrop-filter:blur(14px)}
+.brand-tile .brand-logo{display:block;max-width:82%;width:auto;max-height:92px;object-fit:contain;object-position:left center;mix-blend-mode:multiply}
+.brand-tile .milky-logo{width:calc(100% + 50px);height:112px;max-width:none;max-height:none;align-self:stretch;margin:0 -25px;object-fit:cover;object-position:center;mix-blend-mode:normal}
 
 @media(max-width:720px){.gateway{padding:0 6vw}
 .gateway-grid{grid-template-columns:1fr;transform:translateY(-26px)}
