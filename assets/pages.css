@@ -10,3 +10,9 @@ body[data-page='private-label'] .intro .cards{grid-template-columns:repeat(4,min
 body[data-page='private-label'] .intro .card{min-height:250px}
 @media(max-width:1050px){body[data-page='private-label'] .intro .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:800px){body[data-page='private-label'] .intro .cards{grid-template-columns:1fr}}
+
+/* Contract manufacturing process: restrained UNIKS visual language. */
+body[data-page='private-label'] .band{background:#f0e4ef;color:#21172d;border-top:1px solid rgba(33,23,45,.12)}
+body[data-page='private-label'] .band h2 em{color:#673e80}
+body[data-page='private-label'] .band .stages,body[data-page='private-label'] .band .stage{border-color:rgba(33,23,45,.18)}
+body[data-page='private-label'] .band .stage p{color:#5b5164}
