@@ -4,7 +4,7 @@
   const benefits = document.createElement('section');
   benefits.className = 'pl-benefits reveal show';
   benefits.innerHTML = `
-    <div class="section-title">Переваги співпраці з Private Label</div>
+    <div class="section-title">Переваги співпраці з UNIKS</div>
     <div>
       <h2>Повний цикл.<br><em>Одна відповідальна команда.</em></h2>
       <p class="pl-benefits-lead">Від рецептури до готового товару на вашому складі: беремо на себе маршрут запуску, щоб ви могли зосередитися на своєму бренді та ринку.</p>
@@ -20,7 +20,7 @@
 
   document.querySelector('.intro')?.after(benefits);
   document.head.insertAdjacentHTML('beforeend', `<style>
-    body[data-page="private-label"] .hero{background-color:#21172d;background-image:linear-gradient(90deg,rgba(28,16,42,.96) 0%,rgba(28,16,42,.78) 42%,rgba(28,16,42,.13) 76%),url('/assets/private-label-packaging-line.jpg');background-size:cover;background-position:center}
+    body[data-page="private-label"] .hero{background-color:#21172d;background-image:linear-gradient(90deg,rgba(28,16,42,.96) 0%,rgba(28,16,42,.78) 42%,rgba(28,16,42,.13) 76%),url('assets/private-label-packaging-line.jpg');background-size:cover;background-position:center}
     body[data-page="private-label"] .hero .orb{opacity:.12}
     .pl-benefits{display:grid;grid-template-columns:.8fr 1.6fr;gap:55px;background:#f0e4ef}
     .pl-benefits h2{margin:0 0 16px}.pl-benefits h2 em{color:#673e80}
