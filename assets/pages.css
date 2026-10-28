@@ -3,4 +3,10 @@
 
 /* Wider, evenly distributed desktop navigation */
 .navlinks{flex:1;justify-content:center;gap:clamp(10px,1.3vw,22px);margin:0 18px;white-space:nowrap;font-size:10.5px}
-(max-width:1100px){.navlinks{gap:11px;margin:0 12px;font-size:10px}}
+@media(max-width:1100px){.navlinks{gap:11px;margin:0 12px;font-size:10px}}
+
+/* Four stages of contract manufacturing belong in one visual row. */
+body[data-page='private-label'] .intro .cards{grid-template-columns:repeat(4,minmax(0,1fr))}
+body[data-page='private-label'] .intro .card{min-height:250px}
+@media(max-width:1050px){body[data-page='private-label'] .intro .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){body[data-page='private-label'] .intro .cards{grid-template-columns:1fr}}
