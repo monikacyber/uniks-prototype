@@ -32,7 +32,7 @@
 .gateway-card:nth-child(1){background:linear-gradient(135deg,#f8d0df,#e9a6c7)}
 .gateway-card:nth-child(2){background:linear-gradient(135deg,#dbcaed,#9e71c0)}
 .gateway-card:nth-child(3){background:linear-gradient(135deg,#3b284d,#1d132a);color:#fff}
-.gateway-card:nth-child(4){background:linear-gradient(135deg,#f7d9e6,#e8a5c4)}
+.gateway-card:nth-child(4){background:linear-gradient(135deg,#f8d8e6,#efa8c7)}
 .gateway-card:nth-child(5){background:linear-gradient(135deg,#426aa0,#1d365f);color:#fff}
 .gateway-card:nth-child(6){background:linear-gradient(135deg,#e9f2fb,#a9cdea)}
 .gateway-card small{font:11px 'DM Mono';letter-spacing:.12em;text-transform:uppercase}
