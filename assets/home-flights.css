@@ -1,0 +1,6 @@
+.flight-route{position:absolute;left:63%;top:48%;height:1px;transform-origin:left center;background:linear-gradient(90deg,#cb6ce8,rgba(216,183,240,.05));opacity:0;animation:flight 2.2s ease-out forwards;animation-delay:var(--delay)}
+.flight-route:after{content:'›';position:absolute;right:-2px;top:-12px;color:#f8edff;font:24px/1 Arial;transform:rotate(0deg)}
+.flight-route.r1{width:152px;transform:rotate(-148deg);--delay:.7s}.flight-route.r2{width:176px;transform:rotate(-22deg);--delay:1s}.flight-route.r3{width:132px;transform:rotate(70deg);--delay:1.3s}.flight-route.r4{width:118px;transform:rotate(160deg);--delay:1.6s}
+.flight-caption{position:absolute;left:67%;top:60%;font:10px 'DM Mono';letter-spacing:.1em;color:#d8b7f0;white-space:nowrap;opacity:0;animation:caption-in .8s ease forwards 2.1s}.factory-caption{position:absolute;left:67%;top:51%;font:10px/1.55 'DM Mono';letter-spacing:.1em;color:#fbf8fc;white-space:nowrap;opacity:0;animation:caption-in .8s ease forwards 1.8s}.factory-caption b{color:#d8b7f0;font-weight:500}
+@keyframes flight{0%{opacity:0;width:0}25%{opacity:.85}100%{opacity:.8}}@keyframes caption-in{to{opacity:1}}
+@media(max-width:720px){.flight-route,.flight-caption,.factory-caption{opacity:0!important;animation:none}}
