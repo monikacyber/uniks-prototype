@@ -1,6 +1,6 @@
 .site-map{background:#fbf8fc;padding-top:108px;padding-bottom:108px}
 
-.site-map h2{margin:18px 0 52px;max-width:730px;font:clamp(40px,5vw,70px)/1 'Playfair Display';letter-spacing:-.05em}
+.site-map h2{margin:18px 0 52px;max-width:730px;font:clamp(40px,5vw,70px)/1 'Cormorant Garamond';letter-spacing:-.05em}
 
 .route-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(33,23,45,.22)}
 
@@ -16,7 +16,7 @@
 .route:nth-child(6){background:linear-gradient(135deg,#e7f1fc,#9cc9e8)}
 
 .route small{font:11px 'DM Mono';letter-spacing:.1em;text-transform:uppercase}
-.route b{font:clamp(25px,3vw,39px)/1 'Playfair Display';letter-spacing:-.04em}
+.route b{font:clamp(25px,3vw,39px)/1 'Cormorant Garamond';letter-spacing:-.04em}
 .route p{margin:0;max-width:230px;font-size:13px;line-height:1.55}
 .route:nth-child(5) p{color:#d8ece4}
 
@@ -36,7 +36,7 @@
 .gateway-card:nth-child(5){background:linear-gradient(135deg,#426aa0,#1d365f);color:#fff}
 .gateway-card:nth-child(6){background:linear-gradient(135deg,#e9f2fb,#a9cdea)}
 .gateway-card small{font:11px 'DM Mono';letter-spacing:.12em;text-transform:uppercase}
-.gateway-card b{font:clamp(29px,3.5vw,49px)/.95 'Playfair Display';letter-spacing:-.05em}
+.gateway-card b{font:clamp(29px,3.5vw,49px)/.95 'Cormorant Garamond';letter-spacing:-.05em}
 .gateway-card p{max-width:240px;margin:0;font-size:13px;line-height:1.55}
 .gateway-card:nth-child(3) p{color:#e5d7ef}.gateway-card:nth-child(5) p{color:#dce8f8}
 .home-nav{backdrop-filter:blur(14px)}
