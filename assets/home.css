@@ -16,7 +16,7 @@
 .route:nth-child(6){background:linear-gradient(135deg,#e7f1fc,#9cc9e8)}
 
 .route small{font:11px 'DM Mono';letter-spacing:.1em;text-transform:uppercase}
-.route b{font:clamp(25px,3vw,39px)/1 'Cormorant Garamond';letter-spacing:-.04em}
+.route b{font:650 clamp(22px,2.45vw,34px)/1.04 Manrope,Arial,sans-serif;letter-spacing:-.055em}
 .route p{margin:0;max-width:230px;font-size:13px;line-height:1.55}
 .route:nth-child(5) p{color:#d8ece4}
 
@@ -36,7 +36,7 @@
 .gateway-card:nth-child(5){background:linear-gradient(135deg,#426aa0,#1d365f);color:#fff}
 .gateway-card:nth-child(6){background:linear-gradient(135deg,#e9f2fb,#a9cdea)}
 .gateway-card small{font:11px 'DM Mono';letter-spacing:.12em;text-transform:uppercase}
-.gateway-card b{font:clamp(29px,3.5vw,49px)/.95 'Cormorant Garamond';letter-spacing:-.05em}
+.gateway-card b{font:650 clamp(25px,2.8vw,39px)/1.02 Manrope,Arial,sans-serif;letter-spacing:-.065em}
 .gateway-card p{max-width:240px;margin:0;font-size:13px;line-height:1.55}
 .gateway-card:nth-child(3) p{color:#e5d7ef}.gateway-card:nth-child(5) p{color:#dce8f8}
 .home-nav{backdrop-filter:blur(14px)}
