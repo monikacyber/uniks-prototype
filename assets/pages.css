@@ -16,3 +16,15 @@ body[data-page='private-label'] .band{background:#f0e4ef;color:#21172d;border-to
 body[data-page='private-label'] .band h2 em{color:#673e80}
 body[data-page='private-label'] .band .stages,body[data-page='private-label'] .band .stage{border-color:rgba(33,23,45,.18)}
 body[data-page='private-label'] .band .stage p{color:#5b5164}
+
+/* Partner case placeholder section. */
+body[data-page='private-label'] .pl-projects{display:grid;grid-template-columns:.8fr 1.6fr;gap:55px;background:#fbf8fc;border-top:1px solid rgba(33,23,45,.12)}
+body[data-page='private-label'] .pl-projects h2{margin:0 0 18px}
+body[data-page='private-label'] .pl-projects h2 em{color:#673e80}
+body[data-page='private-label'] .pl-projects p{max-width:610px;margin:0;color:#5b5164;font-size:16px;line-height:1.75}
+body[data-page='private-label'] .project-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px}
+body[data-page='private-label'] .project-grid article{min-height:160px;padding:18px;border:1px dashed rgba(33,23,45,.28);display:flex;flex-direction:column;justify-content:space-between;background:#f4eef5}
+body[data-page='private-label'] .project-grid span,body[data-page='private-label'] .project-grid small{font:10px 'DM Mono';letter-spacing:.1em;text-transform:uppercase;color:#80688d}
+body[data-page='private-label'] .project-grid strong{font:600 18px Manrope,Arial,sans-serif;letter-spacing:-.05em}
+@media(max-width:900px){body[data-page='private-label'] .pl-projects{grid-template-columns:1fr;gap:25px}body[data-page='private-label'] .project-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:540px){body[data-page='private-label'] .project-grid{grid-template-columns:1fr}}
