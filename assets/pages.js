@@ -36,3 +36,7 @@ if(document.body.dataset.page==='private-label'){const projects=document.createE
 if(document.body.dataset.page==='private-label')document.querySelector('.pl-numbers b')?.replaceChildren('25+');
 
 if(document.body.dataset.page==='about')document.querySelector('.band')?.remove();
+
+if(document.body.dataset.page==='about'){document.querySelector('.awards-grid')?.insertAdjacentHTML('beforeend','<article><div class="award-image"><img src="assets/uniks-iso-22716.png" alt="Сертифікат ISO 22716:2007 UNIKS"></div><h3>ISO 22716:2007</h3><span>Належні виробничі практики для косметики</span></article><article><div class="award-image"><img src="assets/uniks-consumer-choice-2019.png" alt="Національний сертифікат Вибір споживача 2019"></div><h3>Вибір споживача</h3><span>Національний сертифікат · 2019</span></article>');document.head.insertAdjacentHTML('beforeend','<style>.awards-grid{grid-template-columns:repeat(3,1fr)}@media(max-width:1000px){.awards-grid{grid-template-columns:repeat(2,1fr)}}</style>')}
+
+if(document.body.dataset.page==='about'){const awardImages=document.querySelectorAll('.awards-grid article img');if(awardImages[4])awardImages[4].src='https://drive.google.com/thumbnail?id=14EMgmDeOAYrVCbHw-s8kLW7-3XNtOcom&sz=w1400';if(awardImages[5])awardImages[5].src='https://drive.google.com/thumbnail?id=19Zbts1Y8RvJkHOxQELmBBjqDXlNKQM8a&sz=w1400'}
