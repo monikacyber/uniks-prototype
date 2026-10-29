@@ -34,6 +34,13 @@
     .hero .orb{opacity:.24}
     .hero .hero-bottom,.hero>div:not(.origin-map):not(.orb){z-index:2}
   </style>
+  <style>
+    .home-nav{padding-left:3vw;padding-right:3vw;gap:14px}
+    .home-nav .navlinks{flex:1;justify-content:center;gap:10px;font-size:10px}
+    .home-nav .locale,.home-nav .palette{flex:0 0 auto;white-space:nowrap}
+    .home-nav .palette{margin-left:0}
+    @media(max-width:1280px){.home-nav .navlinks{gap:8px;font-size:9px}.home-nav .brand img{height:36px}}
+  </style>
 </head>
 <body>
   <header class="nav home-nav"><a class="brand" href="#top"><img src="https://www.uniks.com.ua/wp-content/uploads/2020/04/uniks-logo2.png.webp" alt="UNIKS"><img class="petals" src="https://www.uniks.com.ua/wp-content/uploads/2020/04/uniks-logo2.png.webp" alt="" aria-hidden="true"></a><nav class="navlinks"><a href="/about/">Про UNIKS</a><a href="/brands/">Власні бренди</a><a href="/rnd/">Лабораторія R&amp;D</a><a href="/private-label/">Контрактне виробництво</a><a href="/certification/">Сертифікація</a><a href="/partnerships/">Партнерства</a><a href="/news/">Новини та події</a><a href="/contact/">Контакти</a></nav><button class="locale" type="button" aria-label="Switch to English">UA / EN</button><span class="palette" aria-label="Відтінки сиреневого"><button class="swatch active" data-tone="lavender" aria-label="Lavender"></button><button class="swatch" data-tone="orchid" aria-label="Orchid"></button><button class="swatch" data-tone="plum" aria-label="Plum"></button></span></header>
