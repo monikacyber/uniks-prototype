@@ -62,8 +62,10 @@
     card.classList.add("person-card-photo");
     card.insertAdjacentHTML(
       "afterbegin",
-      '<img src="assets/team-anastasia-azarova.jpg" alt="Анастасія Азарова, менеджерка напряму Private Label" loading="lazy">'
+      '<img src="assets/team-anastasia-azarova.jpg" alt="Анастасія Азарова, Project Manager Private Label" loading="lazy">'
     );
+    const role = card.querySelector("strong");
+    if (role) role.textContent = "Project Manager Private Label";
     return true;
   };
 
@@ -155,6 +157,30 @@
     return true;
   };
 
+  const applyOksanaCard = () => {
+    const core = document.querySelector(".people-core");
+    if (!core) return false;
+
+    let card = [...core.querySelectorAll(".person-card")]
+      .find((item) => item.querySelector("h3")?.textContent.trim() === "Оксана Ігнатюк");
+    if (!card) {
+      core.insertAdjacentHTML(
+        "beforeend",
+        '<article class="person-card"><span>Закупівлі</span><h3>Оксана Ігнатюк</h3><strong>Raw Materials Procurement Manager</strong><p>Забезпечує закупівлю сировини та матеріалів для виробництва, поєднуючи надійність постачання, якість і потреби виробничого плану.</p></article>'
+      );
+      card = core.lastElementChild;
+    }
+    if (!card || card.dataset.photoReady) return Boolean(card);
+
+    card.dataset.photoReady = "true";
+    card.classList.add("person-card-photo", "person-card-oksana");
+    card.insertAdjacentHTML(
+      "afterbegin",
+      '<img src="assets/team-oksana-ihnatiuk.jpg" alt="Оксана Ігнатюк, Raw Materials Procurement Manager" loading="lazy">'
+    );
+    return true;
+  };
+
   const applyPeopleTeam = () => {
     const core = document.querySelector(".people-core");
     if (!core || core.dataset.peopleExtended) return Boolean(core);
@@ -187,7 +213,8 @@
     const levitska = applyAnastasiaLevitskaCard();
     const oleksandr = applyOleksandrCard();
     const nataliia = applyNataliiaCard();
-    return maria && founders && anastasia && yurii && people && levitska && oleksandr && nataliia;
+    const oksana = applyOksanaCard();
+    return maria && founders && anastasia && yurii && people && levitska && oleksandr && nataliia && oksana;
   };
 
   if (!applyTeamCards()) {
