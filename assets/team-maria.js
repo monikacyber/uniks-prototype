@@ -51,6 +51,59 @@
     return true;
   };
 
+  const applyAnastasiaCard = () => {
+    const card = [...document.querySelectorAll(".people-core .person-card")]
+      .find((item) => item.querySelector("h3")?.textContent.trim() === "Анастасія Азарова");
+    if (!card || card.dataset.photoReady) return Boolean(card);
+
+    card.dataset.photoReady = "true";
+    card.classList.add("person-card-photo");
+    card.insertAdjacentHTML(
+      "afterbegin",
+      '<img src="assets/team-anastasia-azarova.jpg" alt="Анастасія Азарова, менеджерка напряму Private Label" loading="lazy">'
+    );
+    return true;
+  };
+
+  const applyYuriiCard = () => {
+    const card = [...document.querySelectorAll(".people-core .person-card")]
+      .find((item) => item.querySelector("h3")?.textContent.trim() === "Юрій");
+    if (!card || card.dataset.photoReady) return Boolean(card);
+
+    card.dataset.photoReady = "true";
+    card.classList.add("person-card-photo");
+    card.insertAdjacentHTML(
+      "afterbegin",
+      '<img src="assets/team-yurii-levytskyi.jpg" alt="Юрій Левицький, директор виробництва" loading="lazy">'
+    );
+    const name = card.querySelector("h3");
+    if (name) name.textContent = "Юрій Левицький";
+    return true;
+  };
+
+  const applyPeopleTeam = () => {
+    const core = document.querySelector(".people-core");
+    if (!core || core.dataset.peopleExtended) return Boolean(core);
+
+    core.dataset.peopleExtended = "true";
+    core.insertAdjacentHTML(
+      "beforeend",
+      '<article class="person-card"><span>Люди та культура</span><h3>Вікторія Андрєєва</h3><strong>People &amp; Culture Manager</strong><p>Підтримує команди UNIKS у наймі, адаптації та щоденній взаємодії, щоб людям було зрозуміло, спокійно й цікаво працювати разом.</p></article><article class="person-card"><span>HR-стратегія</span><h3>Вікторія Булдигіна</h3><strong>Head of People &amp; Culture</strong><p>Розвиває HR-напрям: культуру, процеси та середовище, у якому команда може зростати разом із компанією.</p></article>'
+    );
+
+    const andreeva = [...core.querySelectorAll(".person-card")]
+      .find((item) => item.querySelector("h3")?.textContent.trim() === "Вікторія Андрєєва");
+    if (andreeva) {
+      andreeva.dataset.photoReady = "true";
+      andreeva.classList.add("person-card-photo");
+      andreeva.insertAdjacentHTML(
+        "afterbegin",
+        '<img src="assets/team-victoria-andreeva.jpg" alt="Вікторія Андрєєва, People &amp; Culture Manager" loading="lazy">'
+      );
+    }
+    return true;
+  };
+
   if (!applyMariaCard()) {
     const observer = new MutationObserver(() => {
       if (applyMariaCard()) observer.disconnect();
@@ -58,4 +111,7 @@
     observer.observe(document.body, { childList: true, subtree: true });
   }
   applyFoundersPhoto();
+  applyAnastasiaCard();
+  applyYuriiCard();
+  applyPeopleTeam();
 })();
