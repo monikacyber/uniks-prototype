@@ -22,6 +22,7 @@
         .person-card-photo>img{display:block;width:100%;height:220px;object-fit:cover;object-position:center 63%}
         .person-card-victoria>img{object-position:center 18%}
         .person-card-levitska>img{object-position:center 22%}
+        .person-card-nataliia>img{object-position:center 28%;transform:scale(1.1)}
         .person-card-photo>span,.person-card-photo>h3,.person-card-photo>strong,.person-card-photo>p{margin-left:24px;margin-right:24px}
         .person-card-photo>span{margin-top:18px}
         .person-card-photo>h3{margin-top:25px}
