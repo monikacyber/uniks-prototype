@@ -236,7 +236,7 @@
       buldyhina.classList.add("person-card-photo", "person-card-buldyhina");
       buldyhina.insertAdjacentHTML(
         "afterbegin",
-        '<img src="/uniks-prototype/assets/team-victoria-buldyhina.jpg" alt="Вікторія Булдигіна, Head of People &amp; Culture" loading="lazy">'
+        '<img src="/uniks-prototype/assets/team-victoria-buldyhina.jpg?v=victoria-buldyhina-01" alt="Вікторія Булдигіна, Head of People &amp; Culture" loading="lazy">'
       );
     }
     return true;
