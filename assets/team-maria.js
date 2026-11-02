@@ -10,7 +10,7 @@
     card.classList.add("person-card-photo");
     card.insertAdjacentHTML(
       "afterbegin",
-      '<img src="assets/team-maria-udovenko.jpg" alt="Марія Удовенко, Головна технологиня R&amp;D" loading="lazy">'
+      '<img src="/uniks-prototype/assets/team-maria-udovenko.jpg" alt="Марія Удовенко, Головна технологиня R&amp;D" loading="lazy">'
     );
     const role = card.querySelector("strong");
     if (role) role.textContent = "Головна технологиня R&D · Chief Technologist";
@@ -39,7 +39,7 @@
     lead.dataset.photoReady = "true";
     lead.insertAdjacentHTML(
       "afterbegin",
-      '<figure class="founder-photo"><img src="assets/team-founders.jpg" alt="Анна Страхова та Тетяна Біць — співзасновниці та CEO UNIKS" loading="lazy"></figure>'
+      '<figure class="founder-photo"><img src="/uniks-prototype/assets/team-founders.jpg" alt="Анна Страхова та Тетяна Біць — співзасновниці та CEO UNIKS" loading="lazy"></figure>'
     );
     document.head.insertAdjacentHTML(
       "beforeend",
@@ -62,7 +62,7 @@
     card.classList.add("person-card-photo");
     card.insertAdjacentHTML(
       "afterbegin",
-      '<img src="assets/team-anastasia-azarova.jpg" alt="Анастасія Азарова, Project Manager Private Label" loading="lazy">'
+      '<img src="/uniks-prototype/assets/team-anastasia-azarova.jpg" alt="Анастасія Азарова, Project Manager Private Label" loading="lazy">'
     );
     const role = card.querySelector("strong");
     if (role) role.textContent = "Project Manager Private Label";
@@ -78,7 +78,7 @@
     card.classList.add("person-card-photo");
     card.insertAdjacentHTML(
       "afterbegin",
-      '<img src="assets/team-yurii-levytskyi.jpg" alt="Юрій Левицький, директор виробництва" loading="lazy">'
+      '<img src="/uniks-prototype/assets/team-yurii-levytskyi.jpg" alt="Юрій Левицький, директор виробництва" loading="lazy">'
     );
     const name = card.querySelector("h3");
     if (name) name.textContent = "Юрій Левицький";
@@ -104,7 +104,7 @@
     card.classList.add("person-card-photo", "person-card-levitska");
     card.insertAdjacentHTML(
       "afterbegin",
-      '<img src="assets/team-anastasia-levitska.jpg" alt="Анастасія Левицька, Brand &amp; Packaging Designer" loading="lazy">'
+      '<img src="/uniks-prototype/assets/team-anastasia-levitska.jpg" alt="Анастасія Левицька, Brand &amp; Packaging Designer" loading="lazy">'
     );
     return true;
   };
@@ -128,7 +128,7 @@
     card.classList.add("person-card-photo");
     card.insertAdjacentHTML(
       "afterbegin",
-      '<img src="assets/team-oleksandr-viaznykov.jpg" alt="Олександр Вязников, Head of Distribution Ukraine" loading="lazy">'
+      '<img src="/uniks-prototype/assets/team-oleksandr-viaznykov.jpg" alt="Олександр Вязников, Head of Distribution Ukraine" loading="lazy">'
     );
     return true;
   };
@@ -152,7 +152,7 @@
     card.classList.add("person-card-photo", "person-card-nataliia");
     card.insertAdjacentHTML(
       "afterbegin",
-      '<img src="assets/team-nataliia-hirman.jpg" alt="Наталія Гірман, National Key Account Manager" loading="lazy">'
+      '<img src="/uniks-prototype/assets/team-nataliia-hirman.jpg" alt="Наталія Гірман, National Key Account Manager" loading="lazy">'
     );
     return true;
   };
@@ -176,7 +176,7 @@
     card.classList.add("person-card-photo", "person-card-oksana");
     card.insertAdjacentHTML(
       "afterbegin",
-      '<img src="assets/team-oksana-ihnatiuk.jpg" alt="Оксана Ігнатюк, Raw Materials Procurement Manager" loading="lazy">'
+      '<img src="/uniks-prototype/assets/team-oksana-ihnatiuk.jpg" alt="Оксана Ігнатюк, Raw Materials Procurement Manager" loading="lazy">'
     );
     return true;
   };
@@ -198,7 +198,7 @@
       andreeva.classList.add("person-card-photo", "person-card-victoria");
       andreeva.insertAdjacentHTML(
         "afterbegin",
-        '<img src="assets/team-victoria-andreeva.jpg" alt="Вікторія Андрєєва, People &amp; Culture Manager" loading="lazy">'
+        '<img src="/uniks-prototype/assets/team-victoria-andreeva.jpg" alt="Вікторія Андрєєва, People &amp; Culture Manager" loading="lazy">'
       );
     }
     return true;
