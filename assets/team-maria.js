@@ -182,6 +182,30 @@
     return true;
   };
 
+  const applySvitlanaCard = () => {
+    const core = document.querySelector(".people-core");
+    if (!core) return false;
+
+    let card = [...core.querySelectorAll(".person-card")]
+      .find((item) => item.querySelector("h3")?.textContent.trim() === "Світлана Ціпко");
+    if (!card) {
+      core.insertAdjacentHTML(
+        "beforeend",
+        '<article class="person-card"><span>Фінанси</span><h3>Світлана Ціпко</h3><strong>Accountant</strong><p>Забезпечує щоденну точність фінансових операцій та підтримує прозорий, надійний облік для команд і партнерів UNIKS.</p></article>'
+      );
+      card = core.lastElementChild;
+    }
+    if (!card || card.dataset.photoReady) return Boolean(card);
+
+    card.dataset.photoReady = "true";
+    card.classList.add("person-card-photo", "person-card-svitlana");
+    card.insertAdjacentHTML(
+      "afterbegin",
+      '<img src="/uniks-prototype/assets/team-svitlana-tsipko.jpg" alt="Світлана Ціпко, Accountant" loading="lazy">'
+    );
+    return true;
+  };
+
   const applyPeopleTeam = () => {
     const core = document.querySelector(".people-core");
     if (!core || core.dataset.peopleExtended) return Boolean(core);
@@ -215,7 +239,8 @@
     const oleksandr = applyOleksandrCard();
     const nataliia = applyNataliiaCard();
     const oksana = applyOksanaCard();
-    return maria && founders && anastasia && yurii && people && levitska && oleksandr && nataliia && oksana;
+    const svitlana = applySvitlanaCard();
+    return maria && founders && anastasia && yurii && people && levitska && oleksandr && nataliia && oksana && svitlana;
   };
 
   if (!applyTeamCards()) {
