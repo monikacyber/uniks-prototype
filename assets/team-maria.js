@@ -81,6 +81,30 @@
     return true;
   };
 
+  const applyAnastasiaLevitskaCard = () => {
+    const core = document.querySelector(".people-core");
+    if (!core) return false;
+
+    let card = [...core.querySelectorAll(".person-card")]
+      .find((item) => item.querySelector("h3")?.textContent.trim() === "Анастасія Левицька");
+    if (!card) {
+      core.insertAdjacentHTML(
+        "beforeend",
+        '<article class="person-card"><span>Бренд і пакування</span><h3>Анастасія Левицька</h3><strong>Brand &amp; Packaging Designer</strong><p>Розвиває візуальну мову брендів UNIKS — від упаковки й системи дизайну до деталей, які роблять продукт впізнаваним на полиці.</p></article>'
+      );
+      card = core.lastElementChild;
+    }
+    if (!card || card.dataset.photoReady) return Boolean(card);
+
+    card.dataset.photoReady = "true";
+    card.classList.add("person-card-photo");
+    card.insertAdjacentHTML(
+      "afterbegin",
+      '<img src="assets/team-anastasia-levitska.jpg" alt="Анастасія Левицька, Brand &amp; Packaging Designer" loading="lazy">'
+    );
+    return true;
+  };
+
   const applyPeopleTeam = () => {
     const core = document.querySelector(".people-core");
     if (!core || core.dataset.peopleExtended) return Boolean(core);
@@ -104,14 +128,20 @@
     return true;
   };
 
-  if (!applyMariaCard()) {
+  const applyTeamCards = () => {
+    const maria = applyMariaCard();
+    const founders = applyFoundersPhoto();
+    const anastasia = applyAnastasiaCard();
+    const yurii = applyYuriiCard();
+    const people = applyPeopleTeam();
+    const levitska = applyAnastasiaLevitskaCard();
+    return maria && founders && anastasia && yurii && people && levitska;
+  };
+
+  if (!applyTeamCards()) {
     const observer = new MutationObserver(() => {
-      if (applyMariaCard()) observer.disconnect();
+      if (applyTeamCards()) observer.disconnect();
     });
     observer.observe(document.body, { childList: true, subtree: true });
   }
-  applyFoundersPhoto();
-  applyAnastasiaCard();
-  applyYuriiCard();
-  applyPeopleTeam();
 })();
