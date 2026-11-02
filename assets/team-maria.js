@@ -20,6 +20,8 @@
       `<style>
         .people-core .person-card-photo{padding:0;overflow:hidden}
         .person-card-photo>img{display:block;width:100%;height:220px;object-fit:cover;object-position:center 63%}
+        .person-card-victoria>img{object-position:center 18%}
+        .person-card-levitska>img{object-position:center 22%}
         .person-card-photo>span,.person-card-photo>h3,.person-card-photo>strong,.person-card-photo>p{margin-left:24px;margin-right:24px}
         .person-card-photo>span{margin-top:18px}
         .person-card-photo>h3{margin-top:25px}
@@ -97,10 +99,58 @@
     if (!card || card.dataset.photoReady) return Boolean(card);
 
     card.dataset.photoReady = "true";
-    card.classList.add("person-card-photo");
+    card.classList.add("person-card-photo", "person-card-levitska");
     card.insertAdjacentHTML(
       "afterbegin",
       '<img src="assets/team-anastasia-levitska.jpg" alt="Анастасія Левицька, Brand &amp; Packaging Designer" loading="lazy">'
+    );
+    return true;
+  };
+
+  const applyOleksandrCard = () => {
+    const core = document.querySelector(".people-core");
+    if (!core) return false;
+
+    let card = [...core.querySelectorAll(".person-card")]
+      .find((item) => item.querySelector("h3")?.textContent.trim() === "Олександр Вязников");
+    if (!card) {
+      core.insertAdjacentHTML(
+        "beforeend",
+        '<article class="person-card"><span>Дистрибуція</span><h3>Олександр Вязников</h3><strong>Head of Distribution Ukraine</strong><p>Відповідає за розвиток напряму дистрибуції UNIKS в Україні, роботу з партнерами та системну присутність продукції у ключових каналах.</p></article>'
+      );
+      card = core.lastElementChild;
+    }
+    if (!card || card.dataset.photoReady) return Boolean(card);
+
+    card.dataset.photoReady = "true";
+    card.classList.add("person-card-photo");
+    card.insertAdjacentHTML(
+      "afterbegin",
+      '<img src="assets/team-oleksandr-viaznykov.jpg" alt="Олександр Вязников, Head of Distribution Ukraine" loading="lazy">'
+    );
+    return true;
+  };
+
+  const applyNataliiaCard = () => {
+    const core = document.querySelector(".people-core");
+    if (!core) return false;
+
+    let card = [...core.querySelectorAll(".person-card")]
+      .find((item) => item.querySelector("h3")?.textContent.trim() === "Наталія Гірман");
+    if (!card) {
+      core.insertAdjacentHTML(
+        "beforeend",
+        '<article class="person-card"><span>Національні мережі</span><h3>Наталія Гірман</h3><strong>National Key Account Manager</strong><p>Розвиває співпрацю UNIKS із національними торговельними мережами: від узгодження асортименту до сталого партнерства та спільного зростання.</p></article>'
+      );
+      card = core.lastElementChild;
+    }
+    if (!card || card.dataset.photoReady) return Boolean(card);
+
+    card.dataset.photoReady = "true";
+    card.classList.add("person-card-photo", "person-card-nataliia");
+    card.insertAdjacentHTML(
+      "afterbegin",
+      '<img src="assets/team-nataliia-hirman.jpg" alt="Наталія Гірман, National Key Account Manager" loading="lazy">'
     );
     return true;
   };
@@ -119,7 +169,7 @@
       .find((item) => item.querySelector("h3")?.textContent.trim() === "Вікторія Андрєєва");
     if (andreeva) {
       andreeva.dataset.photoReady = "true";
-      andreeva.classList.add("person-card-photo");
+      andreeva.classList.add("person-card-photo", "person-card-victoria");
       andreeva.insertAdjacentHTML(
         "afterbegin",
         '<img src="assets/team-victoria-andreeva.jpg" alt="Вікторія Андрєєва, People &amp; Culture Manager" loading="lazy">'
@@ -135,7 +185,9 @@
     const yurii = applyYuriiCard();
     const people = applyPeopleTeam();
     const levitska = applyAnastasiaLevitskaCard();
-    return maria && founders && anastasia && yurii && people && levitska;
+    const oleksandr = applyOleksandrCard();
+    const nataliia = applyNataliiaCard();
+    return maria && founders && anastasia && yurii && people && levitska && oleksandr && nataliia;
   };
 
   if (!applyTeamCards()) {
