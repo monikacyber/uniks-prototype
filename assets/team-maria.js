@@ -10,7 +10,7 @@
     card.classList.add("person-card-photo");
     card.insertAdjacentHTML(
       "afterbegin",
-      '<img src="../assets/team-maria-udovenko.jpg" alt="Марія Удовенко, Головна технологиня R&amp;D" loading="lazy">'
+      '<img src="assets/team-maria-udovenko.jpg" alt="Марія Удовенко, Головна технологиня R&amp;D" loading="lazy">'
     );
     const role = card.querySelector("strong");
     if (role) role.textContent = "Головна технологиня R&D · Chief Technologist";
@@ -37,7 +37,7 @@
     lead.dataset.photoReady = "true";
     lead.insertAdjacentHTML(
       "afterbegin",
-      '<figure class="founder-photo"><img src="../assets/team-founders.jpg" alt="Анна Страхова та Тетяна Біць — співзасновниці та CEO UNIKS" loading="lazy"></figure>'
+      '<figure class="founder-photo"><img src="assets/team-founders.jpg" alt="Анна Страхова та Тетяна Біць — співзасновниці та CEO UNIKS" loading="lazy"></figure>'
     );
     document.head.insertAdjacentHTML(
       "beforeend",
