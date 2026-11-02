@@ -22,7 +22,7 @@
         .person-card-photo>img{display:block;width:100%;height:220px;object-fit:cover;object-position:center 63%}
         .person-card-victoria>img{object-position:center 18%}
         .person-card-levitska>img{object-position:center 22%}
-        .person-card-nataliia>img{object-position:center 62%;transform:scale(1.28);transform-origin:center 62%}
+        .person-card-nataliia>img{object-position:center 64%;transform:scale(1.28) translateY(-18px);transform-origin:center 64%;clip-path:inset(0)}
         .people-core{align-items:stretch}
         .people-core .person-card{height:100%;box-sizing:border-box}
         .person-card-photo>span,.person-card-photo>h3,.person-card-photo>strong,.person-card-photo>p{margin-left:24px;margin-right:24px}
