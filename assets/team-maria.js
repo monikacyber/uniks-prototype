@@ -46,8 +46,8 @@
       "beforeend",
       `<style>
         .about-team .founder-lead{display:grid;grid-template-columns:minmax(240px,.78fr) 1fr;column-gap:32px;align-items:center}
-        .founder-photo{grid-row:span 3;margin:0;align-self:stretch;min-height:260px;overflow:hidden}
-        .founder-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 45%}
+        .founder-photo{grid-row:span 3;margin:0;align-self:stretch;min-height:260px;overflow:hidden;background:#efe5df}
+        .founder-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
         @media(max-width:620px){.about-team .founder-lead{display:block}.founder-photo{height:330px;min-height:0;margin:0 0 22px}.founder-photo img{object-position:center 42%}}
       </style>`
     );
