@@ -50,8 +50,8 @@
           <figure><img src="assets/rnd-components-and-samples.jpg" width="750" height="1000" alt="Компоненти та зразки на робочому столі технолога" loading="lazy" decoding="async"><figcaption><h3>Компоненти й зразки</h3><p>Порівнюємо варіанти формули, щоб підібрати потрібну текстуру, колір і аромат.</p></figcaption></figure>
         </div>
         <figure class="rnd-video-card">
-          <video controls playsinline preload="none" poster="assets/rnd-lab-video-poster-v1.jpg" aria-label="Технологиня UNIKS демонструє лабораторний зразок. Коротке відео без звуку." aria-describedby="rnd-video-caption" width="540" height="960"><source src="assets/rnd-lab-process-v1.mp4" type="video/mp4"><a href="assets/rnd-lab-process-v1.mp4">Відкрити відео лабораторії</a></video>
-          <figcaption id="rnd-video-caption"><span class="section-title">Знайомство з лабораторією</span><h3>Зразок у руках технологині</h3><p>Короткий відеофрагмент демонстрації лабораторного зразка. Без звуку.</p></figcaption>
+          <video controls playsinline preload="none" poster="assets/rnd-lab-video-poster-v1.jpg" aria-label="Технологиня UNIKS демонструє лабораторний зразок" aria-describedby="rnd-video-caption" width="540" height="960"><source src="assets/rnd-lab-process-v2.mp4" type="video/mp4"><a href="assets/rnd-lab-process-v2.mp4">Відкрити відео лабораторії</a></video>
+          <figcaption id="rnd-video-caption"><span class="section-title">Знайомство з лабораторією</span><h3>Зразок у руках технологині</h3><p>Короткий відеофрагмент демонстрації лабораторного зразка.</p></figcaption>
         </figure>
       </div>
     </section>
