@@ -206,3 +206,82 @@
     padding: 20px;
   }
 }
+
+.news-hero {
+  background: radial-gradient(ellipse at 78% 0%, #402341, transparent 64%), #21172d;
+  color: #fcf7fc;
+  padding: clamp(34px, 5vw, 74px) 5.5vw clamp(30px, 4vw, 58px);
+}
+.news-hero-inner { max-width: 1460px; margin: 0 auto; }
+.news-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 325px);
+  align-items: end;
+  gap: 28px;
+  margin-bottom: clamp(24px, 3vw, 43px);
+}
+.news-label {
+  margin: 0 0 16px;
+  font: 600 11px/1.35 Manrope, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .19em;
+  color: #e5c7ee;
+}
+.news-hero h1 {
+  max-width: 820px;
+  margin: 0;
+  font: 500 clamp(49px, 6.5vw, 100px)/.92 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: -.045em;
+}
+.news-hero h1 em { color: #e5bdec; font-weight: 500; white-space: nowrap; }
+.news-lead {
+  max-width: 31ch;
+  margin: 0 0 4px;
+  font: 500 15px/1.65 Manrope, Arial, sans-serif;
+  color: #e9dce9;
+}
+.news-triptych {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(8px, 1.1vw, 16px);
+}
+.news-hero figure { margin: 0; min-width: 0; }
+.news-hero figure img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1.35;
+  object-fit: cover;
+}
+.news-team img { object-position: 54% center; }
+.news-expo-frame {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  aspect-ratio: 1.35;
+  background: radial-gradient(ellipse at center, #842651 0%, #542037 70%, #3a1b32 100%);
+}
+.news-expo-frame img {
+  position: absolute;
+  inset: 0;
+  margin-inline: auto;
+  width: auto;
+  height: 100%;
+  aspect-ratio: 720 / 1000;
+  object-position: center bottom;
+}
+.news-congress img { object-position: 57% center; }
+.news-hero figcaption {
+  padding-top: 11px;
+  color: #ebdceb;
+  font: 600 12px/1.4 Manrope, Arial, sans-serif;
+}
+@media (max-width: 760px) {
+  .news-intro { grid-template-columns: 1fr; gap: 14px; }
+  .news-hero h1 { font-size: clamp(46px, 9vw, 68px); }
+  .news-lead { font-size: 14px; }
+  .news-triptych { grid-template-columns: 1fr 1fr; gap: 14px 8px; }
+  .news-expo { grid-column: 1 / -1; grid-row: 1; }
+  .news-expo-frame { aspect-ratio: 1.15; }
+  .news-hero figure img { aspect-ratio: 1.28; }
+  .news-hero figcaption { padding-top: 7px; font-size: 11px; }
+}
