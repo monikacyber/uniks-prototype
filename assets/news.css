@@ -97,6 +97,22 @@
   margin: 28px 0;
 }
 
+.bologna-cover img {
+  max-height: min(75vh, 800px);
+  object-fit: contain;
+}
+
+.bologna-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  align-items: center;
+  gap: clamp(12px, 2vw, 24px);
+}
+
+.news-article .bologna-gallery figure {
+  margin: 0;
+}
+
 .article-return {
   margin-top: 32px;
   padding-top: 16px;
