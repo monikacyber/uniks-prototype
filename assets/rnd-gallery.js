@@ -3,6 +3,13 @@
   if (!labNote) return;
 
   labNote.insertAdjacentHTML('afterend', `
+    <section class="lab-recipes" id="lab-recipes" aria-labelledby="lab-recipes-title">
+      <h2 class="lab-recipes-stat" id="lab-recipes-title"><strong>1500+</strong> власних рецептур</h2>
+      <div>
+        <h3>Від лабораторного зразка до виробництва</h3>
+        <p>Розробляємо формулу під завдання вашого бренду. Разом визначаємо, яким має бути продукт: як він наноситься, яку має текстуру й аромат, як відчувається під час використання. Готуємо лабораторний зразок, доопрацьовуємо його за вашими відгуками та після погодження готуємо формулу до виробництва.</p>
+      </div>
+    </section>
     <section class="lab-gallery" id="lab-photos" aria-labelledby="lab-photos-title">
       <h2 id="lab-photos-title">Як працює наша лабораторія</h2>
       <div class="lab-gallery-grid">
