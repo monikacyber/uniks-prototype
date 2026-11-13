@@ -23,7 +23,11 @@ function showCategory(filter) {
 
 filters.forEach(button => button.addEventListener('click', () => showCategory(button)));
 
-if (location.hash === '#media') {
-  const mediaFilter = filters.find(button => button.dataset.filter === 'media');
-  if (mediaFilter) showCategory(mediaFilter);
+function showLinkedCategory() {
+  const category = location.hash === '#media' ? 'media' : 'all';
+  const filter = filters.find(button => button.dataset.filter === category);
+  if (filter) showCategory(filter);
 }
+
+window.addEventListener('hashchange', showLinkedCategory);
+showLinkedCategory();
