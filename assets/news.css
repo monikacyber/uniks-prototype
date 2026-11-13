@@ -26,3 +26,44 @@
   opacity: 1;
   transform: none;
 }
+
+.congress-story {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 56px);
+  margin-bottom: 14px;
+  padding: clamp(20px, 3vw, 42px);
+  background: #f8f3f8;
+  scroll-margin-top: 92px;
+}
+
+.congress-story[hidden] {
+  display: none;
+}
+
+.congress-story:target {
+  opacity: 1;
+  transform: none;
+}
+
+.congress-story h2 {
+  font-size: clamp(36px, 4.2vw, 62px);
+}
+
+.congress-photos {
+  display: grid;
+  gap: 10px;
+}
+
+.congress-photos img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 850px) {
+  .congress-story {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
