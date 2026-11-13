@@ -47,12 +47,4 @@
   font-size: 22px;
 }
 
-body[data-page='private-label'] .pl-projects .pl-interview-link {
-  margin-top: 16px;
-}
-
-.pl-interview-link a {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
 

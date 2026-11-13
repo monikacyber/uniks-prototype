@@ -44,10 +44,7 @@
         </article>
       </div>
       <h3 class="pl-retail-heading">Власні марки торговельних мереж</h3>
-      <p>UNIKS виготовляв продукцію під власними торговими марками мереж EVA, PROSTOR, METRO, «Копійочка» та «Ашан». У таких проєктах ми підбираємо формулу, компоненти й технологію виробництва під завдання партнера.</p>
-      <p class="pl-interview-link">
-        <a href="https://www.bomondvip.com/post/tetiana-byts-success-is-a-sequence-of-actions-that-you-do-everyday">Тетяна Биць про запуск косметичних брендів у BOMOND VIP FASHION</a>
-      </p>
+      <p>Виготовляємо продукцію під власними торговими марками для торговельних мереж, зокрема EVA, PROSTOR, METRO, «Копійочка» та «Ашан».</p>
     </div>
   `;
 })();
