@@ -260,7 +260,7 @@
   aspect-ratio: 1.35;
   background: radial-gradient(ellipse at center, #842651 0%, #542037 70%, #3a1b32 100%);
 }
-.news-expo-frame img {
+.news-hero .news-expo-frame img {
   position: absolute;
   inset: 0;
   margin-inline: auto;
